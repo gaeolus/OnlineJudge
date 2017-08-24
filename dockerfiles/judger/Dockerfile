@@ -17,7 +17,7 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y oracle-java8-installer \
     && cd /tmp \
-    && git clone -b master https://github.com/QingdaoU/Judger \
+    && git clone -b master https://github.com/gaeolus/Judger \
     && cd Judger \
     && python setup.py install \
     && pip install supervisor \
