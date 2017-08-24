@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update \
-    && apt-get -y install apt-utils \
+RUN apt-get -y install apt-utils \
+    && apt-get update \
     && buildDeps=' \
 		software-properties-common \
 		python-software-properties \
