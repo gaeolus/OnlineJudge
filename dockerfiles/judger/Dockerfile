@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM myoj/os:latest
 ENV DEBIAN_FRONTEND noninteractive
 RUN cd /tmp \
     && git clone -b master https://github.com/gaeolus/Judger \
