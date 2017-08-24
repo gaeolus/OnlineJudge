@@ -3,7 +3,7 @@ ENV PYTHONBUFFERED 1
 ADD . /code
 WORKDIR /code
 RUN apt-get update \
-    && apt-get install apt-utils \
+    && apt-get install -y apt-utils \
     && apt-get install --no-install-recommends -y nginx python-pip \ 
        nodejs libmysqlclient-dev python-setuptools build-essential python-dev \
     && pip install -i https://pypi.douban.com/simple -r dockerfiles/oj_web_server/requirements.txt \
