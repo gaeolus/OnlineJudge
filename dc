@@ -1,0 +1,3 @@
+cd ..
+cd OnlineJudgeDeploy
+docker-compose up
