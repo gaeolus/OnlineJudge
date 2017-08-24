@@ -1,6 +1,7 @@
 FROM ubuntu:16.04
 ENV DEBIAN_FRONTEND noninteractive
 ENV PYTHONBUFFERED 1
+COPY ./dockerfiles/judger/sources.list /etc/apt/sources.list
 RUN apt-get update \
     && buildDeps=' \
 		software-properties-common \
