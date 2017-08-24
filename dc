@@ -1,3 +1,4 @@
 cd ..
 cd OnlineJudgeDeploy
+git pull
 docker-compose up
