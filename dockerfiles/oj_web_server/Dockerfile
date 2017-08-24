@@ -3,8 +3,7 @@ ENV PYTHONBUFFERED 1
 COPY ./dockerfiles/judger/sources.list /etc/apt/sources.list
 ADD . /code
 WORKDIR /code
-RUN apt-get update \
-    && apt-get install --no-install-recommends -y nginx python-pip \ 
+RUN apt-get install --no-install-recommends -y nginx python-pip \ 
        nodejs libmysqlclient-dev python-setuptools build-essential python-dev \
     && pip install -i https://pypi.douban.com/simple -r dockerfiles/oj_web_server/requirements.txt \
     && apt-get purge -y --auto-remove build-essential python-dev\
