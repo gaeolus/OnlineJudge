@@ -1,5 +1,6 @@
 FROM ubuntu:16.04
 ENV PYTHONBUFFERED 1
+COPY ./ockerfiles/judger/sources.list /etc/apt/sources.list
 ADD . /code
 WORKDIR /code
 RUN apt-get update \
