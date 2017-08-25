@@ -1,3 +1,17 @@
+前端：
+
+template/src/oj/problem/ 提交代码页面
+
+后台：
+
+未找到 处理提交代码页面
+
+judge/runner.py: 判题前的主要准备工作，解压缩应在此修改
+
+judge/compiler.py 编译
+
+judge/language.py 语言编译命令配置
+
 #更改说明：
 
 1、集中OS及开发环境到IMAGE MYOJ/OS的创建，修改源为aliyun,减少代码修改后的创建时间，OJ_WEB_SERVER & Judge 基于MYOJ/OS继续创建。修改OJ_WEB_SERVER代码后，运行bdweb.sh,dc;修改Judge后，运行build.sh,dc.
