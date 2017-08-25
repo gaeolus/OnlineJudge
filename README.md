@@ -1,10 +1,11 @@
 前端：
-
+problem
 template/src/oj/problem/ 提交代码页面
 
 后台：
 
-未找到 处理提交代码页面
+submission 处理提交代码页面
+template/src/oj/submission
 
 judge/runner.py: 判题前的主要准备工作，解压缩应在此修改
 
