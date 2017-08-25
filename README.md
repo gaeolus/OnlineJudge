@@ -20,7 +20,7 @@ docker image list
 
 container_name: oj_redis oj_mysql judger oj_web_server
 
-docker run -it container_name bash 启动镜像并进入BASH交互模式，exit退出
+docker run -it image_name bash 启动镜像并进入BASH交互模式，exit退出
 
 docker rm  container_name 删除本地容器
 
