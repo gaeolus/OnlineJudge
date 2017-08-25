@@ -1,20 +1,31 @@
-更改说明：
+#更改说明：
 1、集中OS及开发环境到IMAGE MYOJ/OS的创建，减少代码修改后的创建时间，OJ_WEB_SERVER & Judge 基于MYOJ/OS继续创建。修改OJ_WEB_SERVER代码后，运行bdweb.sh,dc;修改Judge后，运行build.sh,dc.
+
 2、WEB 端口改为1111
+
 3、修改Judge创建时下载源码的地址
 
-工具说明：
+#工具说明：
 bdos.sh:myos
+
 bdweb.sh:oj_web_server
+
 bdmysql.sh:mysql
+
 build.sh:judge
+
 dc:docker-compose up
 
 docker image list
+
 container_name: oj_redis oj_mysql judger oj_web_server
+
 docker run -it container_name bash 启动镜像并进入BASH交互模式，exit退出
+
 docker rm  container_name 删除本地容器
+
 docker rm $(docker ps -a -q) 清理所有已经创建的包括终止状态的容器
+
 docker rmi image_id 删除本地image，删除前需要清理使用此镜像的容器
 
 # OnlineJudge 
