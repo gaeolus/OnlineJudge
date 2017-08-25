@@ -46,6 +46,51 @@ docker rmi image_id 删除本地image，删除前需要清理使用此镜像的�
 
 # OnlineJudge 
 
+django
+├── oj
+|       __init__.py
+|       settings.py
+|       urls.py
+|       wsgi.py
+├── manage.py
+└── apps
+        __init__.py
+        admin.py
+        models.py--db table
+        tests.py
+        views.py
+
+INSTALLED_APPS = (
+'account',
+    'announcement',
+    'utils',
+    'group',
+    'problem',
+    'admin',
+    'submission',
+    'contest',
+    'judge',
+    'judge_dispatcher',
+
+    'rest_framework',
+)
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': "oj",
+        'CONN_MAX_AGE': 10,
+        'HOST': "oj_mysql",
+        'PORT': 3306,
+        'USER': os.environ["MYSQL_ENV_MYSQL_USER"],
+        'PASSWORD': os.environ["MYSQL_ENV_MYSQL_ROOT_PASSWORD"]
+    },
+
+python manage.py syncdb
+
+python manage.py runserver
+
 由于作者工作学习繁忙, 目前只能保证有时间的时候修复部分BUG。
 
 部分相关的组件已经开源, 可以参考。
