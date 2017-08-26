@@ -18,6 +18,6 @@ RUN apt-get update \
     && echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections \
     && apt-get update \
     && apt-get install -y --no-install-recommends oracle-java8-installer \
-    &&apt-get install --no-install-recommends -y nginx python-pip \ 
-       nodejs libmysqlclient-dev python-setuptools build-essential python-dev
+    && apt-get install --no-install-recommends -y nginx python-pip \ 
+    && nodejs libmysqlclient-dev python-setuptools build-essential python-dev
 CMD bash
