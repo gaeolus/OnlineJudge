@@ -5,8 +5,6 @@ RUN cd /tmp \
     && cd Judger \
     && python setup.py install \
     && pip install supervisor \
-    && apt-get purge -y --auto-remove $buildDeps \
-    && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /var/judger/run/ \
     && mkdir /var/judger/test_case/ \

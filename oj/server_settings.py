@@ -10,8 +10,10 @@ DATABASES = {
         'CONN_MAX_AGE': 10,
         'HOST': "oj_mysql",
         'PORT': 3306,
-        'USER': os.environ["MYSQL_ENV_MYSQL_USER"],
-        'PASSWORD': os.environ["MYSQL_ENV_MYSQL_ROOT_PASSWORD"]
+        'USER': "root",
+        'PASSWORD': "MYSQL_PASSWORD_AAA"
+        #'USER': os.environ["MYSQL_ENV_MYSQL_USER"],
+        #'PASSWORD': os.environ["MYSQL_ENV_MYSQL_ROOT_PASSWORD"]
     },
     'submission': {
         'NAME': 'oj_submission',
@@ -19,8 +21,10 @@ DATABASES = {
         'CONN_MAX_AGE': 10,
         'HOST': "oj_mysql",
         'PORT': 3306,
-        'USER': os.environ["MYSQL_ENV_MYSQL_USER"],
-        'PASSWORD': os.environ["MYSQL_ENV_MYSQL_ROOT_PASSWORD"]
+        'USER': "root",
+        'PASSWORD': "MYSQL_PASSWORD_AAA"
+     #'USER': os.environ["MYSQL_ENV_MYSQL_USER"],
+        #'PASSWORD': os.environ["MYSQL_ENV_MYSQL_ROOT_PASSWORD"]
     }
 }
 

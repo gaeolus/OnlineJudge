@@ -15,7 +15,8 @@ from __future__ import absolute_import
 import os
 
 # 判断运行环境
-ENV = os.environ.get("oj_env", "local")
+#ENV = os.environ.get("oj_env", "local")
+ENV = os.environ.get("oj_env", "server")
 
 if ENV == "local":
     from .local_settings import *
